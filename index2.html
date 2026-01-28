@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Конструктор идей свиданий</title>
+  <link rel="stylesheet" href="css.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Конструктор идей свиданий</h1>
+
+    <form id="cardForm" class="form">
+      <label>Идея свидания</label>
+      <input type="text" id="title" placeholder="Прогулка в парке, кино, кафе..." required />
+
+      <label>Ориентировочное время (мин)</label>
+      <input type="number" id="duration" min="15" value="90" required />
+
+      <label>Тип свидания</label>
+      <select id="category">
+        <option value="relax">Отдых / прогулка</option>
+        <option value="date">Классическое свидание</option>
+        <option value="activity">Активность (спорт, квест)</option>
+        <option value="culture">Культура (выставка, концерт)</option>
+        <option value="home">Дома / уют</option>
+      </select>
+
+      <button type="submit">Создать идею</button>
+    </form>
+
+    <div id="cardsContainer" class="cards">
+      <!-- карточки идей свиданий -->
+    </div>
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>
